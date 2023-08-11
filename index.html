@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Device</title>
 </head>
 <body>
@@ -15,14 +16,16 @@
         </svg>
       </a>
     </div>
-    <input type="text" class="search-field">
-    <button type="button" class="search-button">Найти</button>
-    <button type="button" class="log-in-button">Войти</button>
-    <button type="button" class="compare-button">Сравнить</button>
-    <a href="#" class="cart">Корзина</a>
+    <div class="user-menu">
+      <input type="text" class="search-field">
+      <button type="button" class="search-button">Найти</button>
+      <button type="button" class="log-in-button">Войти</button>
+      <button type="button" class="compare-button">Сравнить</button>
+      <a href="#" class="cart">Корзина</a>
+    </div>  
     <nav class="main-navigation">
       <ul class="navigation-list">
-        <li>
+        <li class="navigation-item">
           <button class="catalog-button">Каталог товаров</button>
           <ul class="navigation-submenu-list">
             <li><a href="#" target="_blank" rel="noopener noreferrer">Моноподы для cелфи</a></li>
@@ -32,25 +35,26 @@
             <li><a href="#" target="_blank" rel="noopener noreferrer">Квадрокоптеры</a></li>
           </ul>
         </li>
-        <li><a href="#" class="warranty-link">Гарантия</a></li>
-        <li><a href="#" class="contacts-link">Контакты</a></li>
+        <li class="navigation-item"><a href="#" class="delivery-link">Доставка</a></li>
+        <li class="navigation-item"><a href="#" class="warranty-link">Гарантия</a></li>
+        <li class="navigation-item"><a href="#" class="contacts-link">Контакты</a></li>
       </ul>
     </nav>
   </header>  
-  <main class="main-indexтг">
+  <main class="main-index">
     <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
     <section class="promo-section">
       <h2 class="visually-hidden">Промо</h2>
       <div class="promo-image-conainer">
         <button type="button" class="slider-burtton-prev"></button>
-        <img src="" alt="">
+        <img src="img/copter.png" alt="Квадрокоптер с лазером">
         <button type="button" class="slider-burtton-next"></button>
       </div>
       <div class="slider slide-1">
         <div class="promo-main-container">
           <p class="slider-main-title">Порхает как бабочка,<br>жалит как пчела!</p>
           <p class="slider-main-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <button type="button" class="details-bu">Подробнее</button>
+          <button type="button" class="button details-button">Подробнее</button>
           <ul class="slider-buttons-list">
             <li><button type="button" class="slider-button current"></button></li>
             <li><button type="button" class="slider-button"></button></li>
@@ -72,22 +76,24 @@
       <div class="promo-main-container">
         <p class="slider-main-title">Худеем<br>правильно!</p>
         <p class="slider-main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        <button type="button" class="details-bu">Подробнее</button>
+        <button type="button" class="details-button">Подробнее</button>
         <ul class="slider-buttons-list">
           <li><button type="button" class="slider-button"></button></li>
           <li><button type="button" class="slider-button current"></button></li>
           <li><button type="button" class="slider-button"></button></li>
         </ul>
-        <dl>
-          <dd>48 часов</dd>
-          <dt>Без подзарядки</dt>
-        </dl>
+        <table class="specifications-table">
+          <tr>
+            <td>48 часов</td>
+          </tr>
+            <th>Без подзарядки</th>
+        </table>
     </div>
     <div class="slider slide-3">
       <div class="promo-main-container">
         <p class="slider-main-title">Делай селфи,<br>как Бен Стиллер! !</p>
         <p class="slider-main-text">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-        <button type="button" class="details-bu">Подробнее</button>
+        <button type="button" class="details-button">Подробнее</button>
         <ul class="slider-buttons-list">
           <li><button type="button" class="slider-button"></button></li>
           <li><button type="button" class="slider-button"></button></li>
@@ -139,9 +145,9 @@
     <section class="info-section">
       <h2 class="visually-hidden">Информация</h2>
       <div class="info-menu">
-        <button type="button" class="info-menu-button current">Доставка</button>
-        <button type="button" class="info-menu-button">Гарантия</button>
-        <button type="button" class="info-menu-button">Кредит</button>
+        <button type="button" class="button info-menu-button current">Доставка</button>
+        <button type="button" class="button info-menu-button">Гарантия</button>
+        <button type="button" class="button info-menu-button">Кредит</button>
       </div>
       <div class="info-block">
         <div class="info-block">
@@ -173,10 +179,10 @@
             <li>СДИК</li>
             <li>ТоксБерри</li>
           </ul>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="details-about-link">Подробнее о нас</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="button details-about-link">Подробнее о нас</a>
         </div>
         <div class="contacts-block">
-          <h3 class="contacts-title">Контакты</h3>
+          <h3 class="about-title">Контакты</h3>
           <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки. 
           </p>
@@ -185,8 +191,9 @@
             <p class="contacts-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
-            <a href="tel:78128121212" class="contacts-phone"></a>
+            <a href="tel:78128121212" class="contacts-phone">
               +7 (812) 812-12-12
+            </a>
           </address>
           <ul class="contacts-scedule-list">
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
@@ -197,13 +204,13 @@
       </div>
     </section>
     <section class="subscription-section">
-      <h2>Подпишитесь<br> на рассылку</h2>
+      <h2 class="subscription-title">Подпишитесь<br> на рассылку</h2>
       <p>Еженедельный дайджест с обзорами новинок,длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       <div class="email-block">
         <form action="https://echo.htmlacademy.ru/courses" method="post" class="subscription-form">
-          <input type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail">
+          <input class="subscription-input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail">
           <button type="submit" class="subscription-submit">Подписаться</button>
-          <P>Это бесплатно</P>
+          <p class="free-reminder">Это бесплатно</p>
         </form>
       </div>
     </section>
@@ -211,7 +218,10 @@
   <footer class="main-footer">
     <div class="footer-container">
       <div class="footer-left-column">
-        <img src="" alt="Логотип">
+        <svg xmlns="http://www.w3.org/2000/svg" width="145" height="37" fill="none">
+          <path fill="#FFC700" d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.73 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.16 10.49l-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2ZM83.46 10.49h7.6v25.2h-7.6v-25.2ZM93.67 23.09c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3ZM132.9 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"/>
+          <path fill="#FFC700" d="M83.46.39v10.1l7.6-10.1h-7.6Z"/>
+        </svg>
         <p class="footer-adress">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </p>
@@ -219,23 +229,23 @@
     </div>
     <div class="footer-middle-column">
       <div class="footer-info">
-        <a href="#" target="_blank" rel="noopener noreferrer">Доставака</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Гарантия</a>
+        <a class="footer-info-link" href="#" target="_blank" rel="noopener noreferrer">Доставака</a>
+        <a class="footer-info-link" href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
+        <a class="footer-info-link" href="#" target="_blank" rel="noopener noreferrer">Гарантия</a>
       </div>
       <div class="socials">
-        <div class="facebook-wrapper">
+        <div class="socials-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" fill="none">
             <path fill="#444" d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z"/>
           </svg>
         </div>
-        <div class="instagram-wrapper">
+        <div class="socials-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
             <path fill="#444" d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
             <path fill="#444" d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7C1.9 0 0 1.9 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4ZM8 12.1c-2.2 0-4.1-1.8-4.1-4.1S5.8 3.9 8 3.9c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z"/>
           </svg>          
         </div>
-        <div class="twitter-wrapper">
+        <div class="socials-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none">
             <path fill="#444" d="M9.7.155c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/>
           </svg>          
@@ -265,7 +275,7 @@
           <input type="text" name="delivery-item" id="delivery-item">
           <label for="delivery-sum">Количество</label>
           <input type="number" name="delivery-sum" id="delivery-sum">
-          <button type="submit" class="submit-dekivery">Отправить</button>
+          <button type="submit" class="button submit-dekivery">Отправить</button>
         </form>
       </section>
     </div>

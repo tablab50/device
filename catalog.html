@@ -3,41 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Device</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Device Каталог</title>
 </head>
 <body>
-  <header class="main-header">
+<header class="main-header">
     <div class="logo">
-      <a href="#" class="logo-lonk"><img src="" width="145" height="36" alt="Логотип"></a>
+        <a href="#" class="logo-lonk">
+        <svg xmlns="http://www.w3.org/2000/svg" width="145" height="37" fill="none">
+            <path fill="#000" d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.73 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.16 10.49l-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2ZM83.46 10.49h7.6v25.2h-7.6v-25.2ZM93.67 23.09c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3ZM132.9 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"/>
+            <path fill="#510094" d="M83.46.39v10.1l7.6-10.1h-7.6Z"/>
+        </svg>
+        </a>
     </div>
-    <input type="text" class="search-field">
-    <button type="button" class="search-button">Найти</button>
-    <button type="button" class="profile">Коля Петухов</button>
-    <button type="button" class="log-out-button">Войти</button>
-    <button type="button" class="compare-button">Сравнить</button>
-    <a href="#" class="cart">Корзина</a>
+    <div class="user-menu">
+        <input type="text" class="search-field">
+        <button type="button" class="search-button">Найти</button>
+        <button type="button" class="log-in-button">Войти</button>
+        <button type="button" class="compare-button">Сравнить</button>
+        <a href="#" class="cart">Корзина</a>
+    </div>  
     <nav class="main-navigation">
-      <ul class="navigation-list">
-        <li>
-          <button class="catalog-button">Каталог товаров</button>
-          <ul class="navigation-submenu-list">
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Виртуальная реальность</a></li>
+        <ul class="navigation-list">
+        <li class="navigation-item">
+            <button class="catalog-button">Каталог товаров</button>
+            <ul class="navigation-submenu-list">
             <li><a href="#" target="_blank" rel="noopener noreferrer">Моноподы для cелфи</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Экшн-камеры</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Фитнес-браслеты</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Умные часы</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Квадрокоптеры</a></li>
-          </ul>
+            </ul>
         </li>
-        <li><a href="#" class="warranty-link">Гарантия</a></li>
-        <li><a href="#" class="contacts-link">Контакты</a></li>
-      </ul>
+        <li class="navigation-item"><a href="#" class="delivery-link">Доставка</a></li>
+        <li class="navigation-item"><a href="#" class="warranty-link">Гарантия</a></li>
+        <li class="navigation-item"><a href="#" class="contacts-link">Контакты</a></li>
+        </ul>
     </nav>
-  </header>  
-  <main class="main-inner">
+</header>  
+<main class="main-inner">
     <h1 class="visually-hidden">Каталог</h1>
     <header class="inner-header">
-        <h2>Моноподы для селфи</h2>
+        <h2 class="inner-title">Моноподы для селфи</h2>
         <ul class="breadcrumns-list">
             <li class="breadcrumbs-item">
                 <a href="index.html" class="breadcrumbs-link">Главная</a>
@@ -125,12 +132,12 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit" class="catalog-filter-submit">Показать</button>
+                <button type="submit" class="button catalog-filter-submit">Показать</button>
             </form>
             <div class="sorting-container">
                 <h class="sorting-title">Сортировка:</h2>
                 <form action="https://echo.htmlacademy.ru/" method="get">
-                    <select id="sorting-select" name="sorting">
+                    <select class="sorting-select" id="sorting-select" name="sorting">
                         <option value="popular">Популярные</option>
                     </select>
                     <button type="submit" class="visually-hidden">Отсортировать продукты</button>
@@ -141,7 +148,7 @@
             <ul class="product-list">
                 <li class="product-item">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="" alt="" width="360" height="380" class="product-img">
+                        <img src="img/products/monopod-amateur.png" alt="" width="360" height="380" class="product-img">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
                         <h3 class="product-name">Любительская селфи-палка</h3>
@@ -150,7 +157,7 @@
                 </li>
                 <li class="product-item">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="" alt="" width="360" height="380" class="product-img">
+                        <img src="img/products/monopod-pro.jpg" alt="" width="360" height="380" class="product-img">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
                         <h3 class="product-name">Профессиональная селфи-палка</h3>
@@ -159,7 +166,7 @@
                 </li>
                 <li class="product-item">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="" alt="" width="360" height="380" class="product-img">
+                        <img src="img/products/monopod-waterproof.jpg" alt="" width="360" height="380" class="product-img">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
                         <h3 class="product-name">Непотопляемая селфи-палка</h3>
@@ -168,7 +175,7 @@
                 </li>
                 <li class="product-item">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="" alt="" width="360" height="380" class="product-img">
+                        <img src="img/products/monopod-follow-mejpg.jpg" alt="" width="360" height="380" class="product-img">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
                         <h3 class="product-name">Селфи-палка «Следуй за мной»</h3>
@@ -203,4 +210,4 @@
                 </ul>
             </div>
         </section>
-  </main>
+</main>
