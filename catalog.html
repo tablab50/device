@@ -23,7 +23,7 @@
           <button class="log-out-button">Выйти</button>
           <button type="button" class="compare-button">Сравнить</button>
           <a href="#" class="cart-link">Корзина</a>
-        </div>  
+        </div>
         <nav class="main-navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -42,7 +42,7 @@
             <li class="catalog-navigation-item"><a href="#">Квадрокоптеры</a></li>
           </ul>
         </nav>
-      </header>  
+      </header>
         <main class="main-inner">
         <h1 class="visually-hidden">Каталог</h1>
         <header class="inner-header">
@@ -60,6 +60,7 @@
             </ul>
         </header>
         <section class="catalog-products">
+          <section class="filter">
             <h2 class="filter-title">Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru/" method="get" class="catalog-filter">
                 <fieldset class="catalog-filter-group">
@@ -136,80 +137,84 @@
                 </fieldset>
                 <button type="submit" class="button catalog-filter-submit">Показать</button>
             </form>
-            <div class="sorting-container">
-                <h class="sorting-title">Сортировка:</h2>
-                <form action="https://echo.htmlacademy.ru/" method="get">
-                    <select class="sorting-select" id="sorting-select" name="sorting">
-                        <option value="popular">Популярные</option>
-                    </select>
-                    <button type="submit" class="visually-hidden">Отсортировать продукты</button>
-                    <button class="sorting-up" type="button">&#9650;</button>
-                    <button class="sorting-up" type="button">&#9660;</button>
-                </form>
-            </div>
-            <ul class="product-list">
-                <li class="product-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="img/products/monopod-amateur.png" alt="" width="360" height="380" class="product-img">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
-                        <h3 class="product-name">Любительская селфи-палка</h3>
-                        <span class="product-price">500 ₽</span>
-                    </a>
-                </li>
-                <li class="product-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="img/products/monopod-pro.jpg" alt="" width="360" height="380" class="product-img">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
-                        <h3 class="product-name">Профессиональная селфи-палка</h3>
-                        <span class="product-price">1 500 ₽</span>
-                    </a>
-                </li>
-                <li class="product-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="img/products/monopod-waterproof.jpg" alt="" width="360" height="380" class="product-img">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
-                        <h3 class="product-name">Непотопляемая селфи-палка</h3>
-                        <span class="product-price">2 500 ₽</span>
-                    </a>
-                </li>
-                <li class="product-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
-                        <img src="img/products/monopod-follow-mejpg.jpg" alt="" width="360" height="380" class="product-img">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
-                        <h3 class="product-name">Селфи-палка «Следуй за мной»</h3>
-                        <span class="product-price">1 500 ₽</span>
-                    </a>
-                </li>                
-            </ul>
-            <button type="button" class="button button-show-more">Загрузить еще</button>
-            <div class="paginator-block">
-                <ul class="pagination-list">
-                    <li class="pagination-item">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="paginator-prev-link">Назад</a>
+            <div>
+              </section>
+              <div class="catalog-right-column">
+                <div class="sorting-container">
+                    <h class="sorting-title">Сортировка:</h>
+                    <form action="https://echo.htmlacademy.ru/" method="get">
+                        <select class="sorting-select" id="sorting-select" name="sorting">
+                            <option value="popular">Популярные</option>
+                        </select>
+                        <button type="submit" class="visually-hidden">Отсортировать продукты</button>
+                        <button class="sorting-up" type="button">&#9650;</button>
+                        <button class="sorting-up" type="button">&#9660;</button>
+                    </form>
+                  </div>
+                <ul class="product-list">
+                    <li class="product-item">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
+                            <img src="img/products/monopod-amateur.png" alt="" width="360" height="380" class="product-img">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
+                            <h3 class="product-name">Любительская селфи-палка</h3>
+                            <span class="product-price">500 ₽</span>
+                        </a>
                     </li>
-                    <li class="pagiantor-item">
-                        <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">1</a>
+                    <li class="product-item">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
+                            <img src="img/products/monopod-pro.jpg" alt="" width="360" height="380" class="product-img">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
+                            <h3 class="product-name">Профессиональная селфи-палка</h3>
+                            <span class="product-price">1 500 ₽</span>
+                        </a>
                     </li>
-                    <li class="pagiantor-item">
-                        <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">2</a>
+                    <li class="product-item">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
+                            <img src="img/products/monopod-waterproof.jpg" alt="" width="360" height="380" class="product-img">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
+                            <h3 class="product-name">Непотопляемая селфи-палка</h3>
+                            <span class="product-price">2 500 ₽</span>
+                        </a>
                     </li>
-                    <li class="pagiantor-item">
-                        <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">3</a>
-                    </li>
-                    <li class="pagiantor-item">
-                        <span>...</span>
-                    </li>
-                    <li class="pagiantor-item">
-                        <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">15</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="paginator-next-link">Вперед</a>
+                    <li class="product-item">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-img-link">
+                            <img src="img/products/monopod-follow-mejpg.jpg" alt="" width="360" height="380" class="product-img">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="product-name-link">
+                            <h3 class="product-name">Селфи-палка «Следуй за мной»</h3>
+                            <span class="product-price">1 500 ₽</span>
+                        </a>
                     </li>
                 </ul>
+                <button type="button" class="button button-show-more">Загрузить еще</button>
+                <div class="paginator-block">
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="paginator-prev-link">Назад</a>
+                        </li>
+                        <li class="pagiantor-item">
+                            <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">1</a>
+                        </li>
+                        <li class="pagiantor-item">
+                            <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">2</a>
+                        </li>
+                        <li class="pagiantor-item">
+                            <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">3</a>
+                        </li>
+                        <li class="pagiantor-item">
+                            <span>...</span>
+                        </li>
+                        <li class="pagiantor-item">
+                            <a class="paginator-link" href="#" target="_blank" rel="noopener noreferrer">15</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="paginator-next-link">Вперед</a>
+                        </li>
+                    </ul>
+                </div>
+              </section>
             </div>
-        </section>
 </main>

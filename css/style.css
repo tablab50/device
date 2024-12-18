@@ -37,7 +37,7 @@
 }
 
 *:focus-visible {
-    outline: 2px solid var(--special-purple);   
+    outline: 2px solid var(--special-purple);
 }
 
 .visually-hidden {
@@ -94,7 +94,7 @@ a {
 }
 
 .button:hover {
-    background-color: var(--special-yellow-light);   
+    background-color: var(--special-yellow-light);
 }
 
 /* Header */
@@ -125,7 +125,7 @@ a {
     font-family: Rubik;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px; 
+    line-height: 20px;
 
     background-color: transparent;
     width: 360px;
@@ -156,7 +156,7 @@ a {
     font-family: Rubik;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px; 
+    line-height: 20px;
 }
 
 .search-button {
@@ -178,7 +178,7 @@ a {
 }
 
 .cart-link {
-    display: block;  
+    display: block;
     line-height: 30px;
     padding: 5px 0px;
     padding-left: 43px;
@@ -284,13 +284,13 @@ a {
     margin: 0;
     padding: 0;
     padding-bottom: 55px;
-    
+
     list-style: none;
     letter-spacing: normal;
     font-family: Rubik, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18px; 
+    line-height: 18px;
     text-transform: none;
 }
 
@@ -384,8 +384,8 @@ a {
 
 .slider {
     grid-template-columns: 560px 560px;
-    column-gap: 40px;  
-    grid-template-rows: minmax(192px, min-content) minmax(140px, min-content) 40px minmax(160px, min-content);  
+    column-gap: 40px;
+    grid-template-rows: minmax(192px, min-content) minmax(140px, min-content) 40px minmax(160px, min-content);
 }
 
 .slide-1{
@@ -450,7 +450,7 @@ a {
     font-family: Raleway;
     font-size: 50px;
     font-weight: 800;
-    line-height: 50px; 
+    line-height: 50px;
 }
 
 .slider-buttons {
@@ -464,8 +464,8 @@ a {
 }
 
 .details-button:hover {
-    background-color: var(--special-yellow-light);   
-} 
+    background-color: var(--special-yellow-light);
+}
 
 
 .slider-pagination {
@@ -598,7 +598,7 @@ a {
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: -0.36px;
 }
 
@@ -610,7 +610,7 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    height: 390px;    
+    height: 390px;
 }
 
 .interactive-block {
@@ -707,7 +707,7 @@ a {
     margin: 0;
     font-size: 50px;
     font-weight: 800;
-    line-height: 50px; 
+    line-height: 50px;
 }
 
 .info-text {
@@ -812,7 +812,7 @@ a {
     font-family: Raleway;
     font-size: 50px;
     font-weight: 800;
-    line-height: 50px; 
+    line-height: 50px;
 }
 
 .about-text {
@@ -875,7 +875,7 @@ address {
     font-family: Rubik;
     font-size: 24px;
     font-weight: 700;
-    line-height: 30px; 
+    line-height: 30px;
     margin: 0;
     margin-bottom: 15px;
 }
@@ -901,7 +901,7 @@ address {
     position: absolute;
     left: 0;
     right: 0;
-    height: 500px;    
+    height: 500px;
     margin-top: -64px;
 }
 
@@ -1021,7 +1021,7 @@ address {
     font-family: Rubik;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px; 
+    line-height: 20px;
     margin: 0;
 }
 
@@ -1101,7 +1101,7 @@ address {
     font-family: Raleway;
     font-size: 50px;
     font-weight: 800;
-    line-height: 50px; 
+    line-height: 50px;
 }
 
 .modal-form label {
@@ -1159,7 +1159,7 @@ address {
     font-family: Rubik;
     font-size: 18px;
     font-weight: 700;
-    line-height: 20px; 
+    line-height: 20px;
     letter-spacing: -0.36px;
 }
 
@@ -1174,7 +1174,7 @@ address {
     font-family: inherit;
     font-size: 18px;
     font-weight: 400;
-    line-height: 30px; 
+    line-height: 30px;
     border: none;
 }
 
@@ -1200,4 +1200,34 @@ address {
     line-height: 21px;
     letter-spacing: 3.6px;
     text-transform: uppercase;
+}
+
+ /* Breadcrumbs */
+
+ .breadcrumns-list {
+  display: flex;
+ }
+
+ /* Catalog */
+.catalog-products {
+  display: flex;
+}
+
+.filter {
+  width: 320px;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
+
+.sorting-container {
+  display: flex;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
 }
