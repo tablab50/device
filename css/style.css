@@ -111,7 +111,8 @@ a {
     margin: 0 auto;
     width: 1160px;
     padding: 0 60px;
-    background-image: linear-gradient(to bottom, var(--basic-white) 40px, var(--special-yellow-light) 40px)
+    background-image: linear-gradient(to bottom, var(--basic-white) 40px, var(--special-yellow-light) 40px);
+    background-color: #FFFFFF;
 }
 
 .user-menu {
@@ -1113,6 +1114,10 @@ address {
 
 /* Inner  */
 
+.body-inner {
+  background-image: linear-gradient(to bottom, var(--basic-white) 371px,#F0F0F0 40px);
+}
+
 .main-inner {
   flex-grow: 1;
   width: 1160px;
@@ -1416,11 +1421,15 @@ address {
 .filter {
   width: 320px;
   padding: 0 60px;
+  background-color: #F0F0F0;
 }
 
 .catalog-right-column {
-  width: 800x;
+  width: 840px;
   padding-left: 40px;
+  padding-right: 40px;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(to bottom, #F0F0F0 69px, transparent 69px);
 }
 
 .sorting-container {
@@ -1429,6 +1438,11 @@ address {
   align-items: center;
   padding-left: 40px;
   position: relative;
+  background-color: #F0F0F0;
+}
+
+.sorting-select {
+  background-color: #F0F0F0;
 }
 
 .sorting-title {
